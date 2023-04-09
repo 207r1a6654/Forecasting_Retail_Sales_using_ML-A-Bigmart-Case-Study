@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prediction Result</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to left, #83B5D1 0%, #7698B3 100%);
+            background-image: url('background.png');
+        }
+
+        .inbox {}
+
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: auto;
+        }
+
+        p {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Your selections:</p>
+        <ul>
+            <li>Item Weight: <strong>{{ item_weight }}</strong></li>
+            <li>Item Fat Content: <strong>{{ item_fat_content }}</strong></li>
+            <li>Item Visibility: <strong>{{ item_visibility }}</strong></li>
+            <li>Item Type: <strong>{{ item_type }}</strong></li>
+            <li>Item MRP: <strong>{{ item_mrp }}</strong></li>
+            <li>Outlet Establishment Year: <strong>{{ outlet_establishment_year }}</strong></li>
+            <li>Outlet Size: <strong>{{ outlet_size }}</strong></li>
+            <li>Outlet Location Type: <strong>{{ outlet_location_type }}</strong></li>
+            <li>Outlet Type: <strong>{{ outlet_type }}</strong></li>
+        </ul>
+        <p>The predicted value is: <strong>{{ prediction }}</strong></p>
+        <a href="/" class="button">Go Back</a>
+    </div>
+</body>
+
+</html>
